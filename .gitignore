@@ -1,0 +1,30 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Real advertising, Metrica and CRM data, generated results and logs.
+# Only the synthetic fixtures in yandex-direct-assistant/evals/files/ are allowed.
+*.csv
+*.tsv
+*.xlsx
+*.xls
+!yandex-direct-assistant/evals/files/*.csv
+!yandex-direct-assistant/evals/files/*.tsv
+!yandex-direct-assistant/evals/files/*.xlsx
+normalized/
+*-workspace/
+*.log
+logs/
+
+# Filled business profile and decision log belong outside the repository
+/business-profile.md
+/профиль-бизнеса.md
+журнал-изменений.md
+
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store

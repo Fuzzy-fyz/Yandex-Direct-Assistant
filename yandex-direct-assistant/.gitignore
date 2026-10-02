@@ -1,0 +1,17 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+
+# Advertising, Metrica and CRM data and generated results
+*.csv
+*.tsv
+*.xlsx
+*.xls
+normalized/
+!evals/files/*
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
